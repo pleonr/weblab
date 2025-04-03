@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prof. Leon</title>
+</head>
+<body>
+  <header>
+
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+        <li><a href="./sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h1>Entre em contato</h1>
+      <form>
+        <fieldset>
+          <legend>Usuário</legend>
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" placeholder="Digite o seu nome:" autocomplete="on" required/>
+          <br><br>
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="Digite seu email" required/>
+          <br><br>
+          <label for="dt_nasc">Data de Nascimento</label>
+          <input type="date" name="dt_nasc" placeholder="Aniversário"/>
+          <br><br>
+          <label for="user">Usuário</label>
+          <input type="text" name="user" placeholder="Usuário"/>
+          <label for="password">Senha</label>
+          <input type="password" name="password" placeholder="Senha"/>
+        </fieldset>
+        <br><br>
+        <fieldset>
+          <legend>Endereço</legend>
+          <label for="rua">Rua</label>
+          <input type="text" name="rua" size="30" placeholder="Logradouro"/>
+          <br><br>
+          <label for="numero">Numero</label>
+          <input type="text" name="numero" size="6" placeholder="numero"/>
+          <label for="cep">Cep</label>
+          <input type="text" name="cep" size="8" maxlength="8" placeholder="CEP"/>
+          <br><br>
+          <label for="bairro">Bairro</label>
+          <input type="text" name="bairro" size="30" placeholder="Bairro"/>
+          <br><br>
+          <label for="cidade">Cidade</label>
+          <select name="cidade" required>
+            <option></option>
+            <option>Passo Fundo</option>
+            <option>Carazinho</option>
+            <option disabled>Marau</option>
+            <option>Soledade</option>
+            <option>Não me toque</option>
+            <option>Ibiruba</option>
+            <option>Espumoso</option>
+          </select>
+          <br><br>
+          <label for="estado">Estado</label>
+          <select name="estado" required>
+            <option></option>
+            <option select>Rio Grande do Sul</option>
+            <option>Santa Cararina</option>
+            <option disabled>Paraná</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Diversos</legend>
+          <input type="color"/>
+          <input type="file"/>
+
+          <br><br>
+          <p>Deseja receber propagandas?</p>
+          <input type="radio" id="sim" name="propaganda">
+          <label for="sim">Sim</label>
+          <input type="radio" id="nao" name="propaganda">
+          <label for="nao">Não</label>
+
+          <p>Você leu e concorda com os termos de uso do nosso site</p>
+          <label for="termos">Sim</label>
+          <input type="checkbox" name="termos"/>
+
+        </fieldset>
+
+        <br><br>
+        <input type="submit" value="Enviar"/>
+        <input type="image" width="48px" src="./img/enviar.png">
+
+      </form>
+    </article>
+  </main>
+  <footer></footer>
+</body>
+</html>
